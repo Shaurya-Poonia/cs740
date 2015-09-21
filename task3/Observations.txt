@@ -1,7 +1,13 @@
 %% Write your observations with c=0 and 0.15 for sink, multi-component, tree and wiki programs here
-
+---------------------------------------------------------------------------
 sink (c = 0)
 ---------------------------------------------------------------------------------------------------
+output:
+Top 20(n) pages:
+    ID  RANK
+   3   1
+   2   2
+   1   3
 
 In here C = 0 will  give correct solution.
 because we have removed dangling node problem by adding a vector of values 1/n in place of 0 vector
@@ -13,7 +19,12 @@ rank vector will be vector corresponding to eigen value 1+0
 ----------------------------------------------------------------------------------------------------
 sink (c = 0.15)
 ---------------------------------------------------------------------------------------------------
-   
+Output:
+ Top 20(n) pages:
+   ID  RANK
+   3   1
+   2   2
+   1   3
 In here C = 0.15 will also give correct solution.
 because we have removed dangling node problem by adding a vector of values 1/n in place of 0 vector
 corresponding to sink node.
@@ -24,7 +35,14 @@ rank vector will be vector corresponding to eigen value 1+0.15
 
 multi-component (c = 0)
 ---------------------------------------------------------------------------------------------------
-
+Top 20(n) pages: 
+    ID  RANK    or  ID RANK
+   5   1             1  1
+   3   1             2  2
+   4   1             3  3
+   1   4             4  3
+   2   4             5  3  
+   
 In here C = 0 give multiple rank vectors.
 There will be multiple eigen vectors corresponding to eigen value 1.
 Each of eigen vector(rank vector) will correspond to a particular component.
@@ -35,7 +53,15 @@ c = 0.
 
 multi-component (c = 0.15)
 ---------------------------------------------------------------------------------------------------
-
+output:
+Top 20(n) pages:
+    ID  RANK
+   3   1
+   4   1
+   5   1
+   1   1
+   2   1
+   
 In here C = 0.15 will solve the problem faced with c = 0 and we will get one rank vector.
 There will be single eigen vectors corresponding to eigen value 1.15.
 By adding C/N*I(where I is a matrix of size NxN with each element 1 and N is number of nodes),
@@ -48,7 +74,17 @@ c = 0.15.
 
 tree (c = 0)
 ---------------------------------------------------------------------------------------------------
-
+Output:
+Top 20(n) pages:
+    ID  RANK
+   1   1
+   3   2
+   2   3
+   4   4
+   5   4
+   6   4
+   7   4
+   8   4
 In here C = 0 will  give correct solution.
 because we have removed dangling node problem by adding a vector of values 1/n in place of 0 vector
 corresponding to sink node.
@@ -60,6 +96,17 @@ rank vector will be vector corresponding to eigen value 1+0
 
 tree (c = 0.15)
 ---------------------------------------------------------------------------------------------------
+Output:
+Top 20(n) pages:
+    ID  RANK
+   1   1
+   3   2
+   2   3
+   4   4
+   5   4
+   6   4
+   7   4
+   8   4
 In here C = 0.15 will also give correct solution.
 because we have removed dangling node problem by adding a vector of values 1/n in place of 0 vector
 corresponding to sink node.
@@ -68,14 +115,107 @@ rank vector will be vector corresponding to eigen value 1+0.15
 ----------------------------------------------------------------------------------------------------
 
 wiki (c = 0)
+----------------------------------------------------------------------------------------------------
+
+ possible rankings:
+Top 20(n) pages:
+    ID  RANK
+   732     1
+   731     1
+   300     3
+   301     3
+   110     5
+   109     5
+     6     7
+   415     7
+   465     7
+   909     7
+   361     7
+   334     7
+     2     7
+   611     7
+   820     7
+   190     7
+   629     7
+   837     7
+   862     7
+    22     7
+ possible rankings:
+Top 20(n) pages:
+    ID  RANK
+   732     1
+   731     1
+   110     3
+   109     3
+    64     5
+   346     5
+    46     5
+   928     5
+    91     5
+   124     5
+   944     5
+   779     5
+   663     5
+   397     5
+   105     5
+   156     5
+   181     5
+    97     5
+   415     5
+   465     5
+ possible rankings:
+Top 20(n) pages:
+    ID  RANK
+   300     1
+   301     1
+   109     3
+   110     3
+   732     5
+   731     5
+   962     7
+   424     7
+   711     7
+   884     7
+   256     7
+   290     7
+   506     7
+    83     7
+   877     7
+    61     7
+   332     7
+   458     7
+   646     7
+   689     7
+   
+
 wiki (c = 0.15)
+----------------------------------------------------------------------------------------------------
 
 
-
-
-
-
-
+ possible rankings:
+Top 20(n) pages:
+    ID  RANK
+   729     1
+   731     2
+   966     3
+   604     4
+   273     5
+   891     6
+   434     7
+   301     8
+   132     9
+   730    10
+   635    11
+   780    12
+   271    13
+   901    14
+   304    15
+   165    16
+    23    17
+   258    18
+    38    19
+   947    20
+>>
 
 
 
