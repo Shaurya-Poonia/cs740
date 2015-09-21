@@ -1,0 +1,13 @@
+%% Write your observations with c=0 and 0.15 for sink, multi-component, tree and wiki programs here
+
+sink (c = 0)
+sink (c = 0.15)
+
+multi-component (c = 0)
+multi-component (c = 0.15)
+
+tree (c = 0)
+tree (c = 0.15)
+
+wiki (c = 0)
+wiki (c = 0.15)
