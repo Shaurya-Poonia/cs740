@@ -1,6 +1,6 @@
 %% Write your observations with c=0 and 0.15 for sink, multi-component, tree and wiki programs here
 
-a
+a)
 -----------------------------------------------------------------------------------
 Is the method explained in the class correct, or the web versions correct, or both?
 ------------------------------------------------------------------------------------
@@ -261,13 +261,4 @@ page rank will change if we change the value of c
   A high value of c  means that the relative PageRank will be determined by
   PageRank received from other component - rather than the internal link of the component.
   
-
-
-
-
-
-
-
-
-
 
