@@ -1,13 +1,88 @@
 %% Write your observations with c=0 and 0.15 for sink, multi-component, tree and wiki programs here
 
 sink (c = 0)
+---------------------------------------------------------------------------------------------------
+
+In here C = 0 will  give correct solution.
+because we have removed dangling node problem by adding a vector of values 1/n in place of 0 vector
+corresponding to sink node.
+Now every column of C has
+ column sum equal to 1.
+rank vector will be vector corresponding to eigen value 1+0
+
+----------------------------------------------------------------------------------------------------
 sink (c = 0.15)
+---------------------------------------------------------------------------------------------------
+   
+In here C = 0.15 will also give correct solution.
+because we have removed dangling node problem by adding a vector of values 1/n in place of 0 vector
+corresponding to sink node.
+Now every column of C has column sum equal to 1.15.
+rank vector will be vector corresponding to eigen value 1+0.15
+----------------------------------------------------------------------------------------------------
+
 
 multi-component (c = 0)
+---------------------------------------------------------------------------------------------------
+
+In here C = 0 give multiple rank vectors.
+There will be multiple eigen vectors corresponding to eigen value 1.
+Each of eigen vector(rank vector) will correspond to a particular component.
+Since there is no interaction among different components, we can't compare their rank by taking 
+c = 0.
+----------------------------------------------------------------------------------------------------
+
+
 multi-component (c = 0.15)
+---------------------------------------------------------------------------------------------------
+
+In here C = 0.15 will solve the problem faced with c = 0 and we will get one rank vector.
+There will be single eigen vectors corresponding to eigen value 1.15.
+By adding C/N*I(where I is a matrix of size NxN with each element 1 and N is number of nodes),
+we have introduced new link between nodes which makes sure that there is dependence between 
+components.
+Since there is  interaction among different components, we can compare their rank by taking 
+c = 0.15.
+----------------------------------------------------------------------------------------------------
+
 
 tree (c = 0)
+---------------------------------------------------------------------------------------------------
+
+In here C = 0 will  give correct solution.
+because we have removed dangling node problem by adding a vector of values 1/n in place of 0 vector
+corresponding to sink node.
+Now every column of C has column sum equal to 1.
+rank vector will be vector corresponding to eigen value 1+0
+
+----------------------------------------------------------------------------------------------------
+
+
 tree (c = 0.15)
+---------------------------------------------------------------------------------------------------
+In here C = 0.15 will also give correct solution.
+because we have removed dangling node problem by adding a vector of values 1/n in place of 0 vector
+corresponding to sink node.
+Now every column of C has column sum equal to 1.15.
+rank vector will be vector corresponding to eigen value 1+0.15
+----------------------------------------------------------------------------------------------------
 
 wiki (c = 0)
 wiki (c = 0.15)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
